@@ -18,8 +18,8 @@
 		<div id="login_container">
 		<h2>Sign in</h2>
 		<form name="register" method="POST" action="login.php">
-			<label>Email</label><br />
-			<input type="email" id="loginEmail" name="loginEmail" /><br />
+			<label>Username</label><br />
+			<input type="text" id="loginUsername" name="loginUsername" /><br />
 			<label>Password</label><br />
 			<input type="password" id="loginPassword" name="loginPassword" /><br />
 			<input type="submit" id="loginButton" name="loginButton" /><br />
@@ -27,7 +27,7 @@
 	</div>
 
 	<div class="register">
-		<a href="main.php">Register</a>
+		<a href="register_page.php">Register</a>
 	</div>
 
 

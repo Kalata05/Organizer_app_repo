@@ -1,5 +1,7 @@
-*{margin: 0px; padding: 0px;}
+*{margin: 0px; padding: 0px; font-family: Verdana;}
 
+
+#logo{font-size: 30px; font-family: Verdana;}
 
 #menu{
 
@@ -29,6 +31,22 @@
 
 }
 
+#add_task button{
+
+	width: 80px;
+	height: 30px;
+	margin: 10px;
+	border: none;
+
+}
+
+#add_task button:hover{
+
+	background-color: rgb(240,240,240);
+	border: none;
+
+}
+
 
 
 .task{
@@ -37,8 +55,17 @@
 	height: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid green;
+	border-bottom: 1px solid grey;
+	background-color: rgb(240,240,240);
 
+}
+
+.remove_task{
+
+	display: inline-block;
+	color: red;
+	cursor: pointer;
+	padding-left: 50px;
 }
 
 .check_task{
@@ -51,6 +78,8 @@
 .task_name{
 
 	display: inline-block;
+	font-family: Verdana;
+	width: 500px;
 
 }
 
@@ -58,17 +87,12 @@
 .date_task{
 
 	display: inline-block;
+	padding-right: 50px;
 
 }
 
 .time_task{
 
 	display: inline-block;
-
-}
-
-#content{
-
-
 
 }

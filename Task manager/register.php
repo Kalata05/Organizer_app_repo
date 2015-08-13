@@ -1,11 +1,10 @@
 <?php
 
 // connect to db
-
-$host = "localhost";
-$username = "user_root";
-$password = "010203";
-$db = "game_db";
+$host = "mysql5.000webhost.com";
+$username = "a4191716_iserver";
+$password = "k010203";
+$db = "a4191716_testg";
 
 $conn = new mysqli($host, $username,$password, $db);
 
@@ -25,16 +24,13 @@ if(isset($_POST["register_button"])){
 	// add user to db
 	
 	$Add_User = "INSERT INTO user (email, username, password) VALUES ('$email', '$username_u', '$password_p')";
-	
-	if($conn->query($Add_User)){
+	$result = mysqli_query($conn,$Add_User);
+	if($result == 1){
 		
 		echo "You have been successfully registered.";
 		
 	}else echo "Error registering" . $Add_User . "br />";
 	
-		echo $_POST["email"] . "<br />";
-		echo $_POST["username"] . "<br />";
-		echo $_POST["password"] . "<br />";
 	
 }
 
