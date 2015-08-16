@@ -1,0 +1,76 @@
+*{margin: 0px; padding: 0px;}
+
+body{
+
+	background: url('man.jpg') no-repeat center center fixed; 
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+
+}
+
+label{color: #fff;}
+
+#logo{
+
+	padding: 30px;
+	color: #fff;
+	font-size: 35px;
+	font-family: Myriad Pro;
+	text-align: center;
+
+}
+
+#intro{text-align: center; font-family: Calibri; color: #fff;}
+#reg_container{
+
+	width: 250px;
+	height: auto;
+	border: 1px solid grey;
+	padding: 30px;
+
+}
+
+#reg_container h2{font-size: 18px;}
+
+#reg_container input{
+
+	padding-top: 10px;
+}
+
+#login_container h2{
+
+	margin-bottom: 10px;
+	font-family: Calibri;
+	color: #fff;
+}
+
+#login_container{
+
+	width: 180px;
+	height: 180px;
+	margin: 0px auto;
+	margin-top: 50px;
+	padding: 10px;
+	padding-left: 30px;
+
+
+}
+
+#loginEmail, #loginPassword{
+
+	padding: 5px;
+	margin-bottom: 5px;
+
+}
+
+
+.register{
+
+
+	text-align: center;
+
+}
+
+.register a{color: #fff; text-decoration: none; font-size: 30px;}
