@@ -1,7 +1,63 @@
 *{margin: 0px; padding: 0px; font-family: Verdana;}
 
+input[type="text"]{
 
-#logo{font-size: 30px; font-family: Verdana;}
+	border-radius: 3px;
+    display: inline-block;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 150px;
+    border: 1px solid grey;
+
+}
+
+input[type="date"]{
+
+	border-radius: 3px;
+    display: inline-block;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 150px;
+    border: 1px solid grey;
+
+}
+
+input[type="time"]{
+
+	border-radius: 3px;
+    display: inline-block;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 150px;
+    border: 1px solid grey;
+
+}
+
+#taskTime1{
+
+	width: 50px;
+	margin-right: 5px;
+}
+#taskTime2{
+
+	width: 50px;
+	margin-left: 5px;
+
+}
+
+
+
+
+label{margin-left: 20px; display: inline-block; width: 30px; margin-right: 20px;}
+
+#logo{font-size: 20px; height: 50px; padding: 10px; background-color: rgb(240,240,240); color: grey; }
 
 #menu{
 
@@ -10,6 +66,16 @@
 	background-color: #2B3333;
 	float: left;
 
+
+}
+
+.title{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	padding-left: 20px;
+	display: inline;
+	padding-top: 50px;
 
 }
 
@@ -27,7 +93,6 @@
 	width: 100%;
 	height: 600px;
 	background-color: #fff;
-	border: 1px solid grey;
 
 }
 
@@ -96,3 +161,56 @@
 	display: inline-block;
 
 }
+
+
+#create{
+
+	width: auto;
+	height: 30px;
+	padding: 5px;
+	border: none;
+	background-color: green;
+	color: #fff;
+	margin-left: 20px;
+	margin-top: 30px;
+
+}
+
+#delete{
+
+	width: auto;
+	height: 30px;
+	padding: 5px;
+	border: none;
+	background-color: #FF3B39;
+	color: #fff;
+	margin-left: 5px;
+	margin-top: 30px;
+
+}
+
+#deleteAll{
+
+	width: auto;
+	height: 30px;
+	padding: 5px;
+	border: none;
+	background-color: red;
+	color: #fff;
+	margin-left: 5px;
+	margin-top: 30px;
+
+
+
+
+}
+
+#log_out{
+
+	padding: 5px;
+	margin-left: 20px;
+	margin-top: 20px;
+
+}
+
+#list{margin-top: 30px;}

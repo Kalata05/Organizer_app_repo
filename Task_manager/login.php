@@ -1,17 +1,18 @@
 <?php
 
-
+	
 	$host = "mysql5.000webhost.com";
 	$username = "a4191716_iserver";
 	$password = "k010203";
 	$db = "a4191716_testg";
 	
-	/*
-	$host = "localhost";
+	
+	
+	/*$host = "localhost";
 	$username = "user_root";
 	$password = "010203";
-	$db = "game_db";
-	*/
+	$db = "game_db";*/
+	
 	
 
 	$conn = new mysqli($host, $username,$password, $db);
@@ -20,7 +21,7 @@
 		
 		die("Connection failed: " . $conn->connect_error);
 		
-	};
+	}
 
 	session_start();
 
@@ -29,28 +30,45 @@
 
 
 	if(isset($_POST["loginButton"])){
-		
-		$loginUsername = $_POST["loginUsername"];
-		$loginPassword = $_POST["loginPassword"];
 
+		if(isset($_POST["username"])){
 
+			if(isset($_POST["loginPassword"])){
 
-		
-		$query = "SELECT * FROM user WHERE username='$loginUsername' and password='$loginPassword'";
+				$username = $_POST["username"];
+				$loginPassword = mysql_escape_string($_POST["loginPassword"]);
+
+				$lPassword = hash("md5", $loginPassword);
+				
+				$query = "SELECT * FROM user WHERE username='$username' and password='$lPassword'";
  
-		$result = mysqli_query($conn,$query) or die(mysqli_error());
-		$count = mysqli_num_rows($result);
-		if ($count == 1){
-			
-			$_SESSION["username"] = $loginUsername;
-			$_SESSION["password"] = $loginPassword;
-			$_SESSION["query"] = $conn;
-			header("Location:profile.php");
+				$result = mysqli_query($conn,$query) or die(mysqli_error());
+				$count = mysqli_num_rows($result);
+				if ($count == 1){
+					
+					$_SESSION["username"] = $username;
+					$_SESSION["password"] = $loginPassword;
+					$_SESSION["query"] = $conn;
+
+					
+					
+
+						header("Location:profile.php");
+					
 
 
-		}else{
-		echo "Invalid Login Credentials.";
+
+
+				}else{
+				echo "Invalid Login Credentials." . "<br /> <a href='index.php'>Go back</a>";
+				}
+
+			}
+
 		}
+		
+
+
 		
 			
 	
