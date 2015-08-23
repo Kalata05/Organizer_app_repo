@@ -50,8 +50,6 @@ These are instructions for how to use the Task manager
 	
 	If you have problem with using the website or you have encountered a bug, feel free to contact us on our emails below:
 
-	Cvetelina Koleva - cve7i96@gmail.com 
-	Elizabeth Dimitrova - elizabeth_dimitrova@abv.bg
-	Ismail Ismail - ismail.ismailov@gmail.com
+	Cvetelina Koleva - cve7i96@gmail.com
 	Petya Hristova - petiahr@yahoo.com
-	Jivko Kostadinov - kostadinov.j.c@gmail.com
+	Kaloian Mateev = kalata958@gmail.com
